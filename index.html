@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        #contenedor {
+            width: 980px;
+            margin: 0 auto;
+        }
+
+        .caja {
+            border: 2px solid black;
+            background: cadetblue;
+            padding: 3rem;
+        }
+
+        .columna {
+            display: inline-block;
+            padding: 2rem;
+        }
+
+        #menu {
+            width: 200px;
+            background: burlywood;
+        }
+
+        #main {
+            background: cyan;
+        }
+
+        #publicidad {
+            width: 200px;
+            background: goldenrod;
+        }
+
+        em {
+            color: #5E52EF;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor">
+        <div class="caja">Barra</div>
+        <div class="caja">
+            <div class="columna" id="menu">Menu</div>
+            <div class="columna" id="main">
+                <h1>Bienvenido  a  <strong><em>Instapet</em> </strong></h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil rem vitae eaque eum eos explicabo dicta fuga praesentium provident temporibus rerum tenetur voluptatum maxime dolore sapiente, accusantium vero corporis nemo?</p>
+                <h3>Ingrese datos</h3>
+                <form action="">
+                    <p>
+                        <label>Nombre de la mascota: <input type="text" name="nombre" placeholder="nombre de la mascota" required> </label>
+                    </p>
+                    <p>
+                        <label for="edad_mascota">Edad de la mascota:</label>
+                        <input type="number" id="edad_mascota" name="edad" placeholder="edad de la mascota" required>
+                    </p>
+                    <p>
+                        <label>Correo electrónico: <input type="email" name="email" placeholder="Ingrese su email" required> </label>                       
+                    </p>
+                    <p>
+                        <label for="contraseña">Contraseña:</label>
+                        <input type="password" id="contraseña" name="contraseña" placeholder="contraseña" required>
+                    </p>
+                    <p>
+                        <label>Color de la mascota: <input type="color" name="color"  value="#FFFFFF" required> </label>                       
+                    </p>
+                    <!-- <p>
+                        <label>Fono:</label>
+                        <input type="tel" name="fono" placeholder="fono">
+                    </p> -->
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="columna" id="publicidad">Publicidad</div>
+        </div>
+    </div>
+</body>
+
+</html>
